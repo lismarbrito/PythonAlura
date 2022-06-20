@@ -19,5 +19,27 @@ class Conta:
         self.__saldo -= valor
 
     def transfere(self, valor, destino):
-        self.saca(valor)
+        self.saca
         destino.deposita(valor)
+
+    # def get_saldo(self):
+    #    return self.__saldo
+    # Podemos utilizar propriedades (abaixo) ao invés de usar a terminologia get/set. Assim podemos chamar pelo nome original como se estivesse acessadno atributo. Mas estamos acessadno o método
+    @property
+    def saldo(self):
+        return self.__saldo
+
+    # def get_titular(self):
+    #    return self.__titular
+    # Podemos utilizar propriedades (abaixo) ao invés de usar a terminologia get/set. Assim podemos chamar pelo nome original como se estivesse acessadno atributo. Mas estamos acessadno o método
+    @property
+    def titular(self):
+        return self.__titular
+
+    @property
+    def limite(self):
+        return self.__limite
+
+    @limite.setter
+    def limite(self, limite):
+        self.__limite = limite
