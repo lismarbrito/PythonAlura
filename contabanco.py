@@ -1,6 +1,8 @@
 class Conta:
-    
+
+    # Esta é a função contrutora que é chamada automaticamente após a constução do objeto.
     def __init__(self, numero, titular, saldo, limite):
+        # "Self" é a referência que sabe o endereço da memória onde está o objeto.
         print("Construindo objeto ... {}".format(self))
         self.__numero = numero
         self.__titular = titular
